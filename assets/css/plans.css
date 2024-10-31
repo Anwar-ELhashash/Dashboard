@@ -1,0 +1,104 @@
+/* start variables */
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+
+  --main-transition: 0.3s;
+}
+
+/* end variables */
+
+/* start blobal rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-alt-color);
+}
+
+/* end blobal rules */
+
+/* start plans-page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width:767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    gap: 10px;
+    margin: 0 10px;
+  }
+}
+
+.plans-page .plan .free {
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+}
+.plans-page .plan .basic {
+  border: 3px solid white;
+  outline: 3px solid var(--blue-color);
+}
+.plans-page .plan .premium {
+  border: 3px solid white;
+  outline: 3px solid var(--orange-color);
+}
+
+.plans-page .plan .dollar {
+  position: absolute;
+  left: -25px;
+  top: -5px;
+  font-size: 35px;
+}
+
+.plans-page .plan ul li a {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end plans-page */
