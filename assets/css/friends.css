@@ -147,4 +147,13 @@ ul {
   background-color: #ff2f20;
 }
 
+@media (max-width:556px) {
+  .friends-page .friend .control {
+    flex-direction: column;
+  }
+
+  .friends-page .friend .control>div {
+    margin-top: 15px;
+  }
+}
 /* end friends-page */
