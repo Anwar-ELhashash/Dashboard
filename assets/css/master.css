@@ -68,17 +68,17 @@ ul {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  display: block;
   background-color: rgb(136 136 136 / 60%);
   color: white;
-  padding: 10px;
   border-radius: 50%;
-  font-size: 18px;
   border: 2px solid white;
   outline: 2px solid rgb(136 136 136 / 60%);
   z-index: 1000000;
-  font-weight: 600;
+  font-weight: bold;
   transition: var(--main-transition);
+  width: 35px;
+  height: 35px;
+  display: none;
 }
 
 .top-of-page:hover {
@@ -87,7 +87,6 @@ ul {
 }
 
 @media (max-width:767px) {
-
   .top-of-page {
     bottom: 20px;
     right: 20px;
