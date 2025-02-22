@@ -12,7 +12,7 @@
 
 /* end variables */
 
-/* start blobal rules */
+/* start Global rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -86,7 +86,7 @@ ul {
   outline-color: var(--blue-color);
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .top-of-page {
     bottom: 20px;
     right: 20px;
@@ -95,7 +95,7 @@ ul {
   }
 }
 
-/* end blobal rules */
+/* end Global rules */
 
 /* start sidebar */
 .sidebar {
@@ -126,7 +126,6 @@ ul {
   width: 120px;
   height: 2px;
   bottom: -20px;
-
 }
 
 .sidebar h3::after {
@@ -152,7 +151,7 @@ ul {
   margin-left: 10px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .sidebar h3 {
     font-size: 8px;
     margin-bottom: 15px;
@@ -262,7 +261,7 @@ ul {
   margin-bottom: 20px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .wrapper {
     grid-template-columns: minmax(200px, 1fr);
     margin-left: 10px;
@@ -307,7 +306,7 @@ ul {
   background-color: var(--blue-alt-color);
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .welcome .intro {
     padding-bottom: 30px;
   }
@@ -316,7 +315,7 @@ ul {
     margin-left: 0;
   }
 
-  .welcome .info>div:not(:last-child) {
+  .welcome .info > div:not(:last-child) {
     margin-bottom: 20px;
   }
 }
@@ -356,14 +355,14 @@ ul {
   height: 5px;
 }
 
-.targets .target-row .details .progress>span {
+.targets .target-row .details .progress > span {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
 }
 
-.targets .target-row .details .progress>span span {
+.targets .target-row .details .progress > span span {
   position: absolute;
   bottom: 16px;
   right: -16px;
@@ -373,7 +372,7 @@ ul {
   border-radius: 4px;
 }
 
-.targets .target-row .details .progress>span span::after {
+.targets .target-row .details .progress > span span::after {
   content: "";
   position: absolute;
   border-color: transparent;
@@ -384,15 +383,15 @@ ul {
   transform: translateX(-50%);
 }
 
-.targets .blue .details .progress>span span::after {
+.targets .blue .details .progress > span span::after {
   border-top-color: var(--blue-color);
 }
 
-.targets .orange .details .progress>span span::after {
+.targets .orange .details .progress > span span::after {
   border-top-color: var(--orange-color);
 }
 
-.targets .green .details .progress>span span::after {
+.targets .green .details .progress > span span::after {
   border-top-color: var(--green-color);
 }
 
@@ -404,7 +403,6 @@ ul {
 .orange .icon,
 .orange .progress {
   background-color: rgb(245 158 11 / 20%);
-  ;
 }
 
 .green .icon,
@@ -427,7 +425,7 @@ ul {
   flex-grow: 1;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .news .card {
     flex-direction: column;
   }
@@ -482,7 +480,7 @@ ul {
   margin: 0 0 25px 30px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .current-project .task p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -505,7 +503,7 @@ ul {
 }
 
 .current-project .task:nth-last-of-type(2) .circle {
-  animation: disapper .8s infinite alternate;
+  animation: disapper 0.8s infinite alternate;
 }
 
 /* .current-project .task:not(:last-of-type) .circle::before {
@@ -730,18 +728,17 @@ ul {
   transition: var(--main-transition);
 }
 
-.toggle-checkbox:checked+.toggle-switch {
+.toggle-checkbox:checked + .toggle-switch {
   background-color: var(--blue-color);
 }
 
-.toggle-checkbox:checked+.toggle-switch::before {
+.toggle-checkbox:checked + .toggle-switch::before {
   content: "\f00c";
   left: 50px;
   color: var(--blue-alt-color);
 }
 
 /* end settings page */
-
 
 /* start animation */
 
